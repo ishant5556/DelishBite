@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - DelishBite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🍔 DelishBite</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html" id="loginBtn">Login</a></li>
+        <li><a href="#" id="userName" style="display:none; font-weight:600;"></a></li>
+        <li><a href="#" id="logoutBtn" style="display:none;">Logout</a></li>
+
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <section class="hero menu-hero">
+    <h1>Our Delicious Indian Menu</h1>
+    <p>Authentic flavors from across India — freshly made, just for you!</p>
+  </section>
+
+  <section class="menu-section">
+    <div class="menu-grid">
+
+      <!-- Butter Chicken -->
+      <div class="menu-item">
+        <img src="images/butter-chicken.jpg" alt="Butter Chicken">
+        <h3>Butter Chicken</h3>
+        <p>Rich, creamy, and mildly spiced curry.</p>
+        <span class="price">₹320</span>
+        <button class="add-to-cart" data-name="Butter Chicken" data-price="320">Add to Cart</button>
+      </div>
+
+      <!-- Biryani -->
+      <div class="menu-item">
+        <img src="images/biryani.jpg" alt="Biryani">
+        <h3>Hyderabadi Biryani</h3>
+        <p>Fragrant rice layered with flavorful chicken masala.</p>
+        <span class="price">₹280</span>
+        <button class="add-to-cart" data-name="Biryani" data-price="280">Add to Cart</button>
+      </div>
+
+      <!-- Samosa -->
+      <div class="menu-item">
+        <img src="images/samosa.jpg" alt="Samosa">
+        <h3>Samosa</h3>
+        <p>Crispy fried pastry stuffed with spicy potatoes.</p>
+        <span class="price">₹40</span>
+        <button class="add-to-cart" data-name="Samosa" data-price="40">Add to Cart</button>
+      </div>
+
+      <!-- Dosa -->
+      <div class="menu-item">
+        <img src="images/dosa.jpg" alt="Dosa">
+        <h3>Dosa</h3>
+        <p>Thin crispy crepe served with chutney & sambar.</p>
+        <span class="price">₹100</span>
+        <button class="add-to-cart" data-name="Dosa" data-price="100">Add to Cart</button>
+      </div>
+
+      <!-- Palak Paneer -->
+      <div class="menu-item">
+        <img src="images/palak-paneer.jpg" alt="Palak Paneer">
+        <h3>Palak Paneer</h3>
+        <p>Soft paneer cubes in smooth spinach gravy.</p>
+        <span class="price">₹220</span>
+        <button class="add-to-cart" data-name="Palak Paneer" data-price="220">Add to Cart</button>
+      </div>
+
+      <!-- Vada Pav -->
+      <div class="menu-item">
+        <img src="images/vada-pav.jpg" alt="Vada Pav">
+        <h3>Vada Pav</h3>
+        <p>Mumbai’s favorite spicy potato fritter in a bun.</p>
+        <span class="price">₹60</span>
+        <button class="add-to-cart" data-name="Vada Pav" data-price="60">Add to Cart</button>
+      </div>
+
+      <!-- Chole Bhature -->
+      <div class="menu-item">
+        <img src="images/chole-bhature.jpg" alt="Chole Bhature">
+        <h3>Chole Bhature</h3>
+        <p>Spicy chickpeas with fluffy deep-fried bread.</p>
+        <span class="price">₹180</span>
+        <button class="add-to-cart" data-name="Chole Bhature" data-price="180">Add to Cart</button>
+      </div>
+
+      <!-- Dal Makhani -->
+      <div class="menu-item">
+        <img src="images/dal-makhani.jpg" alt="Dal Makhani">
+        <h3>Dal Makhani</h3>
+        <p>Creamy lentils slow-cooked with butter.</p>
+        <span class="price">₹200</span>
+        <button class="add-to-cart" data-name="Dal Makhani" data-price="200">Add to Cart</button>
+      </div>
+
+      <!-- Rogan Josh -->
+      <div class="menu-item">
+        <img src="images/rogan-josh.jpg" alt="Rogan Josh">
+        <h3>Rogan Josh</h3>
+        <p>Kashmiri mutton curry with rich flavors.</p>
+        <span class="price">₹350</span>
+        <button class="add-to-cart" data-name="Rogan Josh" data-price="350">Add to Cart</button>
+      </div>
+
+      <!-- Masala Dosa -->
+      <div class="menu-item">
+        <img src="images/masala-dosa.jpg" alt="Masala Dosa">
+        <h3>Masala Dosa</h3>
+        <p>Crispy dosa filled with potato masala.</p>
+        <span class="price">₹120</span>
+        <button class="add-to-cart" data-name="Masala Dosa" data-price="120">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 DelishBite | Designed with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

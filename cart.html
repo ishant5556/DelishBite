@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart - DelishBite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">🍔 DelishBite</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="cart.html" class="active">Cart</a></li>
+      <li><a href="login.html" id="loginBtn">Login</a></li>
+      <li><a href="#" id="userName" style="display:none;"></a></li>
+      <li><a href="#" id="logoutBtn" style="display:none;">Logout</a></li>
+    </ul>
+  </nav>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+</header>
+
+<section class="cart-section" style="padding:40px;">
+  <h2>Your Cart</h2>
+
+  <table id="cartTable" width="100%" cellpadding="10" style="border-collapse:collapse; text-align:center;">
+    <thead>
+      <tr style="background:#ff4c4c; color:white;">
+        <th>Food Item</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Total</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody id="cartBody"></tbody>
+  </table>
+
+  <h2 id="grandTotal" style="margin-top:20px;">Grand Total: ₹0</h2>
+
+  <button id="placeOrder" class="btn" style="margin-top:20px;">Place Order</button>
+</section>
+
+
+<!-- ✅ PAYMENT POPUP FIXED VERSION -->
+<div id="paymentPopup" class="payment-popup">
+  <div class="payment-box">
+    <h2>Select Payment Method</h2>
+
+    <label class="pay-option">
+      <input type="radio" name="payment" value="cod">
+      Cash on Delivery (COD)
+    </label>
+
+    <label class="pay-option">
+      <input type="radio" name="payment" value="upi">
+      UPI (Google Pay / PhonePe / Paytm)
+    </label>
+
+    <div id="upiBox" style="display:none;">
+      <input type="text" id="upiId" placeholder="Enter UPI ID (e.g. yourname@upi)">
+    </div>
+
+    <button id="confirmPayment" class="btn pay-btn">Confirm Payment</button>
+    <button id="closePopup" class="btn cancel-btn">Cancel</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 DelishBite | Designed with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

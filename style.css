@@ -1,0 +1,373 @@
+/* -------------------------------------
+   🌟 GLOBAL STYLES
+------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* -------------------------------------
+   🌟 HEADER
+------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #ff4c4c;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ffd700;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+/* -------------------------------------
+   🌟 HERO SECTION (SLIDESHOW)
+------------------------------------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  transition: background-image 1s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.btn {
+  background: #ffd700;
+  color: #333;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+/* -------------------------------------
+   🌟 FEATURES SECTION
+------------------------------------- */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.feature {
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fafafa;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* -------------------------------------
+   🌟 MENU PAGE
+------------------------------------- */
+.menu-hero {
+  background: url('images/biryani.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.menu-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.menu-hero p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.menu-section {
+  padding: 50px 30px;
+  background: #fff7f5;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  margin: 15px 0 5px;
+  color: #ff4c4c;
+}
+
+.menu-item p {
+  font-size: 0.9rem;
+  padding: 0 10px;
+  color: #555;
+}
+
+.price {
+  display: inline-block;
+  margin: 10px 0 15px;
+  padding: 6px 15px;
+  background: #ff4c4c;
+  color: white;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/* -------------------------------------
+   🌟 LOGIN PAGE
+------------------------------------- */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(120deg, #ff4c4c, #ffb347);
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+  color: #ff4c4c;
+}
+
+.login-box p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.login-form .input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border-color: #ff4c4c;
+  outline: none;
+}
+
+.login-btn {
+  width: 100%;
+  background: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: #e13e3e;
+}
+
+/* -------------------------------------
+   🌟 PAYMENT POPUP
+------------------------------------- */
+.payment-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.payment-box {
+  background: white;
+  padding: 25px;
+  width: 350px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.pay-option {
+  display: block;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+#upiId {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display: none;
+}
+
+/* -------------------------------------
+   🌟 FOOTER
+------------------------------------- */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* -------------------------------------
+   🌟 RESPONSIVE DESIGN
+------------------------------------- */
+@media(max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #ff4c4c;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .menu-hero {
+    padding: 70px 15px;
+  }
+
+  .login-box {
+    padding: 30px 20px;
+  }
+}
